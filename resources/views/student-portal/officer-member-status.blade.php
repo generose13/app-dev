@@ -19,10 +19,10 @@
             <label for="year-level">Year Level:</label>
             <select id="year-level">
                 <option value="">Choose Year Level</option>
-                <option value="1">Year 1</option>
-                <option value="2">Year 2</option>
-                <option value="3">Year 3</option>
-                <option value="4">Year 4</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
             </select>
 
 
@@ -38,8 +38,8 @@
             <label for="status">Status:</label>
             <select id="status">
                 <option value="">Choose Status</option>
-                <option value="active">Cleared</option>
-                <option value="inactive">Not Cleared</option>
+                <option value="Cleared">Cleared</option>
+                <option value="Not Cleared">Not Cleared</option>
             </select>
 
             <label for="search">Search:</label>
