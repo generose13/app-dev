@@ -1,5 +1,5 @@
-@include('layouts.student-nav')
-@yield('student-nav')
+@include('layouts.student-officer-nav')
+@yield('student-officer-nav')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +12,6 @@
 
     <!--Style CSS Link-->
     <link rel="stylesheet" href="css/student.css">
-    <!--Bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,7 +22,9 @@
                 <div class="header-AY">Academic Year: <div class="grey-box"></div>
                 </div>
             </div>
+        </div>
 
+        <div class="mid-content">
             <div class="student-details">
                 <div>Student Details:</div>
                 <div class="details">Full name: <input disabled type="text" style="width: 400px; margin-left: 30px">
@@ -43,8 +42,9 @@
             </div>
         </div>
 
+        <div class="subhead-title">Clearance Status:</div>
+
         <div class="bottom-content">
-            <div class="subhead-title">Clearance Status:</div>
             <div class="card-container">
                 <div class="grid-card">
                     <div class="grid-card-info">Academic Organization Treasurer:</div>

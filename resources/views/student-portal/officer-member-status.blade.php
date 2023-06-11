@@ -1,5 +1,5 @@
-@include('layouts.student-nav')
-@yield('student-nav')
+@include('layouts.student-officer-nav')
+@yield('student-officer-nav')
 
 <!doctype html>
 <html lang="en">
@@ -9,15 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clearance Confirmation</title>
     <link rel="stylesheet" href="css/officer.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
     <div class="clearance-confirmation-container">
         <h2>Member Status</h2>
         <div class="status-options">
@@ -34,9 +29,10 @@
             <label for="section">Section:</label>
             <select id="section">
                 <option value="">Choose Section</option>
-                <option value="A">Section A</option>
-                <option value="B">Section B</option>
-                <option value="C">Section C</option>
+                <option value="AI31">Section AI31</option>
+                <option value="AI32">Section AI32</option>
+                <option value="AI33">Section AI33</option>
+                <option value="AI34">Section AI34</option>
             </select>
 
             <label for="status">Status:</label>

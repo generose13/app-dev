@@ -1,5 +1,5 @@
-@include('layouts.student-nav')
-@yield('student-nav')
+@include('layouts.student-officer-nav')
+@yield('student-officer-nav')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,13 +14,9 @@
     <link rel="stylesheet" href="css/student.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
-    {{-- <div class="sidebar">sidebar</div> --}}
 
     <div class="doc-content-container">
         <!--View Document Markup-->
@@ -30,14 +26,14 @@
                 <div class="header-AY">Academic Year: <div class="grey-box"></div>
                 </div>
             </div>
-            <div class="filename-print">
-                <div>File Name:</div>
-                <div>
-                    <button class="btnPrint"><i class="fa fa-print"></i> Print</button>
-                </div>
+
+        </div>
+        <div class="filename-print">
+            <div>File Name:</div>
+            <div>
+                <button class="btnPrint"><i class="fa fa-print"></i> Print</button>
             </div>
         </div>
-
         <div class="file-content">
             <div class="file-preview"></div>
         </div>
