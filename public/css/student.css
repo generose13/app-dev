@@ -12,43 +12,47 @@ body {
     align-items: flex-start;
     width: 75vw;
     height: 100vh;
-    margin-left: 280px;
+    margin-left: 320px;
 }
 
-.top-content {
+.doc-content-container {
+    margin-left: 20em;
+}
+
+.top-content,
+.bottom-content {
     width: 100%;
-    margin-bottom: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
 }
 
 .top-content .header {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .header .header-title {
     font-size: 26px;
     font-weight: 400;
     width: 50%;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    margin-left: .5em;
 }
 
 .header .header-AY {
     display: flex;
     align-items: center;
     font-size: 16px;
-}
-
-.student-details {
-    margin-bottom: 1.5em;
+    margin-right: 3em;
 }
 
 .details {
     display: flex;
     align-items: center;
-    margin-bottom: 0.5em;
 }
 
 .grey-box {
@@ -62,14 +66,25 @@ body {
     border-bottom: 1px solid grey;
     height: 20px;
     width: 100%;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 
 /**Student Clearance CSS**/
-.top-content .student-details {
+.mid-content .student-details {
     display: grid;
-    padding: 1.5em 3em 1em 3em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 200px;
+    margin: 0;
+}
+
+.subhead-title {
+    position: relative;
+    font-size: 25px;
+    margin-left: .9em;
 }
 
 input {
@@ -88,6 +103,12 @@ input {
     padding-top: 1em;
 }
 
+.card-container {
+    position: relative;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+
 .gci-deets {
     display: flex;
     align-items: center;
@@ -104,9 +125,14 @@ input {
     margin-right: 10px;
 }
 
+.gci-deets .btn-secondary,
+.btn-primary {
+    background: #71adbe;
+}
+
 .btn-success {
     background: rgb(132, 198, 132) !important;
-    margin-left: 25em;
+    margin-left: 15em;
     color: black !important;
 }
 
@@ -117,7 +143,7 @@ input {
 
 .btn-danger {
     background: rgb(255, 70, 70) !important;
-    margin-left: 25em;
+    margin-left: 15em;
     color: black !important;
 }
 
@@ -142,8 +168,9 @@ input {
 
 .bottom-content {
     overflow-y: auto;
-    height: 380px;
-    padding: 0 3em 1.5em 3em;
+    height: 400px;
+    width: 95%;
+
 }
 
 
@@ -182,20 +209,22 @@ input {
     align-items: center;
     justify-content: space-between;
     padding: 1.5em 3em 1em 3em;
+    font-size: 16px;
 }
 
 .btnPrint {
-    background: #006989;
+    background: #007090;
     color: white;
     height: 30px;
     width: 150px;
     border: none;
     border-radius: 5px;
-    padding-left: 3em;
+    place-content: center;
+    align-items: center;
 }
 
 .btnPrint:hover {
-    background: #006989;
+    background: #007090;
     font-weight: 800;
 }
 

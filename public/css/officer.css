@@ -14,6 +14,10 @@ body {
     background: white;
 }
 
+.clearance-confirmation-container h2 {
+    font-size: 25px;
+}
+
 .options {
     display: flex;
     text-align: center;
