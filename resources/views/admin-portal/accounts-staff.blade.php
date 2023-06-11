@@ -11,12 +11,12 @@
                     <h2 class="portal-name">Accounts</h2>
                 </div>
 
-                <div class="btn-accounts">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn btn-primary me-md-2 btn-staff" type="button">Staff</button>
-                        <button class="btn btn-primary btn-student" type="button">Student</button>
-                    </div>
+                <!-- <div class="btn-accounts">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-primary me-md-2 btn-staff" type="button">Staff</button>
+                  <button class="btn btn-primary btn-student" type="button">Student</button>
                 </div>
+              </div> -->
             </div>
             <!-- CONTENT AFTER TITLE -->
             <div class="top-content">
@@ -70,26 +70,24 @@
 
             </div>
 
-            <!-- TABLE CONTENT -->
+            <!-- TABLE CONTENT FOR STAFF -->
             <div class="table-content">
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Organization</th>
-                            <th scope="col">Year-Level</th>
-                            <th scope="col">Section</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Positions</th>
                             <th scope="col">Actions</th>
                         </tr>
                     </thead>
                     <tbody class="table-group-divider">
                         <tr>
-                            <th scope="row">123</th>
-                            <td>Mark Twain</td>
-                            <td>DIGITS</td>
-                            <td>3</td>
-                            <td>AI34</td>
+                            <th scope="row">1500186</th>
+                            <td>Baclea-an</td>
+                            <td>Airis</td>
+                            <td>Adviser</td>
                             <td>
                                 <div class="d-grid gap-2 d-md-block">
                                     <button class="btn btn-primary me-md-2" type="button">Edit</button>
@@ -97,12 +95,12 @@
                                 </div>
                             </td>
                         </tr>
+
                         <tr>
-                            <th scope="row">456</th>
-                            <td>Keanu Reeves</td>
-                            <td>DIGITS</td>
-                            <td>4</td>
-                            <td>AI41</td>
+                            <th scope="row">1600922</th>
+                            <td>Navarro</td>
+                            <td>Nestine</td>
+                            <td>College Chief Librarian</td>
                             <td>
                                 <div class="d-grid gap-2 d-md-block">
                                     <button class="btn btn-primary me-md-2" type="button">Edit</button>
@@ -110,12 +108,12 @@
                                 </div>
                             </td>
                         </tr>
+
                         <tr>
-                            <th scope="row">789</th>
-                            <td>Jill Valentine</td>
-                            <td>DIGITS</td>
-                            <td>2</td>
-                            <td>AI22</td>
+                            <th scope="row">1500186</th>
+                            <td>Baclea-an</td>
+                            <td>Airis</td>
+                            <td>Adviser</td>
                             <td>
                                 <div class="d-grid gap-2 d-md-block">
                                     <button class="btn btn-primary me-md-2" type="button">Edit</button>
@@ -123,7 +121,7 @@
                                 </div>
                             </td>
                         </tr>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -131,25 +129,8 @@
 
     </div>
 
-    <!-- STUDENTS TAB -->
-    <!-- <div class="student-tab-section" id="form-section d-none"> -->
 </div>
 </div>
-
-<!-- <script>
-    // student button
-    document.getElementById('btn-student').addEventListener('click', function() {
-        document.getElementById('student-tab-section').classList.remove('d-none')
-        document.getElementById('staff-tab-section').classList.add('d-none')
-    })
-
-    // staff button
-    document.getElementById('btn-staff').addEventListener('click', function() {
-        document.getElementById('staff-tab-section').classList.add('d-none')
-        document.getElementById('student-tab-section').classList.remove('d-none')
-    })
-</script> -->
-
 </body>
 
 </html>
