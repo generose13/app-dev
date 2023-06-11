@@ -36,7 +36,7 @@
             <!--Navbar Options-->
             <div class="navbar_options">
                 <ul class="nav flex-column">
-                    <li class="nav-item {{ Request::is('/dashboard') ? 'active' : '' }}"> <a href="/dashboard">
+                    <li class="nav-item {{ Request::is('/dash') ? 'active' : '' }}"> <a href="/dash">
                             <button id="btn-dashboard" class="nav-link">
                                 <img src="{{ asset('images/data.png') }}" alt="Dashboard" class="option_icon">Dashboard
                             </button>
@@ -48,9 +48,18 @@
                                     class="option_icon">Student Registration
                             </button>
                         </a> </li>
-                    <li class="nav-item {{ Request::is('/accounts') ? 'active' : '' }}"> <a href="/accounts">
+                    <li class="nav-item {{ Request::is('/accounts-staff') ? 'active' : '' }}"> <a href="/accounts-staff">
                             <button id="btn-account" class="nav-link">
-                                <img src="{{ asset('images/database.png') }}" alt="Accounts" class="option_icon">Accounts
+                                <img src="{{ asset('images/database.png') }}" alt="Accounts" class="option_icon">Staff
+                                Accounts
+                            </button>
+                        </a> </li>
+
+                    <li class="nav-item {{ Request::is('/accounts-student') ? 'active' : '' }}"> <a
+                            href="/accounts-student">
+                            <button id="btn-account" class="nav-link">
+                                <img src="{{ asset('images/database.png') }}" alt="Accounts" class="option_icon">Student
+                                Accounts
                             </button>
                         </a> </li>
                     <li class="nav-item {{ Request::is('/student-officer') ? 'active' : '' }}"> <a href="/student-officer">

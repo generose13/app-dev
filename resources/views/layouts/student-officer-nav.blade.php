@@ -1,5 +1,5 @@
-@yield('student-nav')
-@section('student-nav')
+@yield('student-officer-nav')
+@section('student-officer-nav')
     <title>Student Portal</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -56,6 +56,22 @@
                             <button id="btn-student-officers" class="nav-link officers">
                                 <img src="{{ asset('images/communicate.png') }}" alt="Student Officers" class="option_icon">
                                 User Profile
+                            </button> </a>
+                    </li>
+                    <li class="nav-item {{ Request::is('/officer-clearance-confirmation') ? 'active' : '' }}"> <a
+                            href="/officer-clearance-confirmation">
+                            <button id="btn-student-officers" class="nav-link officers">
+                                <img src="{{ asset('images/communicate.png') }}" alt="Student Officers"
+                                    class="option_icon">
+                                Clearance Confirmation
+                            </button> </a>
+                    </li>
+                    <li class="nav-item {{ Request::is('/officer-member-status') ? 'active' : '' }}"> <a
+                            href="/officer-member-status">
+                            <button id="btn-student-officers" class="nav-link officers">
+                                <img src="{{ asset('images/communicate.png') }}" alt="Student Officers"
+                                    class="option_icon">
+                                View Member Status
                             </button> </a>
                     </li>
 
