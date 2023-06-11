@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.right-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 75vw;
+    height: 100vh;
+    margin-left: 280px;
+}
+
+.top-content {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.top-content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.header .header-title {
+    font-size: 26px;
+    font-weight: 400;
+    width: 50%;
+    justify-content: left;
+    align-items: center;
+}
+
+.header .header-AY {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.student-details {
+    margin-bottom: 1.5em;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.grey-box {
+    background: lightgrey;
+    width: 60px;
+    height: 25px;
+    margin-left: 1em;
+}
+
+.bottom-border {
+    border-bottom: 1px solid grey;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+
+/**Student Clearance CSS**/
+.top-content .student-details {
+    display: grid;
+    padding: 1.5em 3em 1em 3em;
+}
+
+input {
+    background: white;
+    border: 1px solid black;
+    height: 26px;
+}
+
+.grid-card-textbox {
+    width: 300px;
+    height: 30px;
+    padding: 0 1em 0 1em;
+}
+
+.grid-card-info {
+    padding-top: 1em;
+}
+
+.gci-deets {
+    display: flex;
+    align-items: center;
+}
+
+.gci-deets input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.gci-deets button {
+    flex-shrink: 0;
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.btn-success {
+    background: rgb(132, 198, 132) !important;
+    margin-left: 25em;
+    color: black !important;
+}
+
+.btn-success:hover {
+    background: rgb(132, 198, 132) !important;
+    color: white !important;
+}
+
+.btn-danger {
+    background: rgb(255, 70, 70) !important;
+    margin-left: 25em;
+    color: black !important;
+}
+
+.btn-danger:hover {
+    background: rgb(204, 24, 24) !important;
+    color: white !important;
+}
+
+.btn-secondary {
+    margin-left: 2em;
+    font-size: 13px !important;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    width: 500px !important;
+    padding: 1px !important;
+    height: 35px !important;
+    border: none !important;
+    color: black !important;
+}
+
+.bottom-content {
+    overflow-y: auto;
+    height: 380px;
+    padding: 0 3em 1.5em 3em;
+}
+
+
+/**User Profile CSS**/
+
+.user-header .user-header-title {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+
+.upsd {
+    height: 30px;
+    padding: 1em 0 2em 4em;
+}
+
+.subheading {
+    padding-left: 3em;
+    padding-top: 1em;
+}
+
+.upsd-input {
+    width: 350px;
+    height: 30px;
+}
+
+.upsd-file-input {
+    margin-left: 10px;
+}
+
+
+/**View Document CSS**/
+
+.filename-print {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 3em 1em 3em;
+}
+
+.btnPrint {
+    background: #006989;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 3em;
+}
+
+.btnPrint:hover {
+    background: #006989;
+    font-weight: 800;
+}
+
+.file-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 3em 1em 3em;
+    padding-left: 3em;
+}
+
+.file-preview {
+    background: lightgray;
+    height: 70vh;
+    width: 100%;
+}
+
+.upsd-file-input {
+    margin-left: 10px;
+}

@@ -1,0 +1,346 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_container {
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* side nav styles in navstyles.css */
+
+/* Landing Page: Login & Registration */
+.card {
+    border: 4px solid #000000;
+    display: grid;
+    place-items: center;
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    background: white;
+}
+
+.card-header {
+    padding: 0;
+}
+
+.btn-primary,
+.btn-secondary {
+    background-color: #006989;
+}
+
+.form-group,
+.password {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.form-group a {
+    color: #006989;
+    text-decoration: none;
+}
+
+.card border-dark {
+    color: #000000;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-control,
+select {
+    font-size: 16px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 30px;
+}
+
+/*Right Section Form*/
+
+.form-container {
+    overflow-y: auto;
+}
+
+.form_section {
+    padding: 2%;
+}
+
+.form_section_title {
+    padding: 0;
+}
+
+.btn-group {
+    box-sizing: border-box;
+    float: right;
+}
+
+.content_table {
+    background: grey;
+    height: 450px;
+    padding: 5em;
+    margin: 1em;
+}
+
+.navbar-brand {
+    font-size: 15px;
+    cursor: default;
+}
+
+.search_bar {
+    border: solid black 1px;
+    padding: 0.2em;
+    margin-left: 2em;
+    width: 200px;
+}
+
+.clearance-btn {
+    background: rgb(220, 220, 220);
+    border-radius: 0;
+    width: 130px;
+    height: 30px;
+    text-align: right;
+}
+
+.year-btn {
+    background: rgb(220, 220, 220);
+    border-radius: 0;
+    width: 100px;
+    height: 30px;
+    text-align: right;
+}
+
+.table_container {
+    background: rgb(220, 220, 220);
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+/*For dashboard content*/
+.container-wrapper {
+    background-color: #FFF;
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-right: 50px;
+    color: #000;
+    display: flex;
+    width: 80vw;
+    margin-left: 270px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+/*header design*/
+.header {
+    display: inline-flex;
+    width: 100%;
+    height: 10vh;
+}
+
+.portal-title {
+    width: 70vw;
+}
+
+.portal-name {
+    font-size: 30px;
+}
+
+/*portal content design*/
+.portal-content {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.inner-box {
+    background-color: #f0f0f0;
+    padding: 30px;
+    margin-bottom: 30px;
+    color: #747373;
+    width: 100%;
+    height: 30vh;
+    font-weight: lighter;
+}
+
+.dash-links {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+/*student registration*/
+.container {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input-box {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.name-student-id {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-student-id .name-input {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+}
+
+.name-student-id .student-id-input {
+    width: calc(50% - 5px);
+    margin-left: 5px;
+}
+
+/* Top Content After Title Header */
+.top-content {
+    font-size: 18px;
+    display: inline-flex;
+    width: 70vw;
+    place-items: center;
+}
+
+.confirm-request {
+    width: 70vw;
+    display: inline-flex;
+}
+
+.confirm-request-box {
+    background-color: #c3c3c3;
+    padding: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+
+.filter {
+    display: inline-flex;
+    width: 100%;
+}
+
+.dropdown {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-flex;
+    width: 60%;
+}
+
+.filter-btn {
+    background-color: #01a7c2;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search {
+    place-items: center;
+}
+
+/* TABLE STUFF */
+.table-content {
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.table-btns {
+    align-items: left;
+}
+
+/**User Profile CSS**/
+
+.right-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 75vw;
+    height: 100vh;
+    margin-left: 300px;
+}
+
+.top-content {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.top-content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.user-header .user-header-title {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 1px;
+    margin-top: 2em;
+}
+
+.upsd {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 1em 0 2em 4em;
+}
+
+.upsd label {
+    width: 150px;
+}
+
+.subheading {
+    padding-left: 3em;
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+
+.upsd-input {
+    width: 350px;
+    height: 30px;
+}
+
+.upsd-file-input {
+    margin-left: 10px;
+}
+
+.upsd .btn-secondary {
+    background-color: #747373;
+}

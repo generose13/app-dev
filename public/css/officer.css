@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Officer Clearance Confirmation */
+.clearance-confirmation-container {
+    height: 100vh;
+    width: 75vw;
+    padding: 3em;
+    position: absolute;
+    right: 3em;
+    background: white;
+}
+
+.options {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 1em 0 1em 0;
+    margin-bottom: 3em;
+}
+
+.status-options {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 2em 0 2em 0;
+    margin-bottom: 5em;
+}
+
+.member-options {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 1em 0 1em 0;
+    background-color: grey;
+    border: 1px solid rgb(1, 1, 1);
+}
+
+.name {
+    height: 30px;
+    width: 300px;
+}
+
+input {
+    height: 30px;
+    width: 130px;
+    background-color: rgb(214, 209, 209);
+}
+
+.request-label {
+    display: flex;
+    padding-right: 10em;
+    text-align: center;
+}
+
+.label-name {
+    right: 1em;
+}
+
+.label-ID {
+    margin-left: 17.9em;
+}
+
+.label-year-level {
+    margin-left: 5em;
+}
+
+.label-section {
+    margin-left: 5.6em;
+}
+
+.label-status {
+    margin-left: 6.8em;
+}
+
+.name-label {
+    right: 0;
+}
+
+.ID-label {
+    margin-left: 18em;
+}
+
+.year-level-label {
+    margin-left: 7em;
+}
+
+.section-label {
+    margin-left: 7.8em;
+}
+
+.status-label {
+    margin-left: 6.6em;
+}
+
+.request,
+.status {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1em 0;
+}
+
+.btn {
+    padding-inline: 1re.1re, 1tem;
+}
+
+.status-btn {
+    padding-inline: 1re.1re, 1tem;
+    width: 9em;
+}
+
+.textbox {
+    width: 200px;
+    height: 30px;
+    border: 1px solid grey;
+    margin-left: 10px;
+}
+
+#year-level,
+#section,
+#status {
+    margin: 0 0 0 10px;
+    color: black;
+    background-color: rgb(214, 209, 209);
+}
+
+#year-level #section,
+#status option {
+    height: 30px;
+    color: black;
+    background-color: rgb(214, 209, 209);
+    padding: 1px 5px 1px 5px;
+    margin-left: -3em;
+    margin-bottom: 4em;
+}
+
+#search {
+    background-color: white;
+}
+
+.options-CYL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12em;
+}
+
+p {
+    margin: 0;
+}
