@@ -13,9 +13,6 @@ use App\Models\User;
 class AuthController extends Controller
 {
 
-
-
-
     // Show login form
     public function showLoginForm()
     {
