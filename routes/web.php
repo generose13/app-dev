@@ -1,13 +1,25 @@
 <?php
 
-
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentController;
-use App\Http\Controllers\ClearanceController;
-use App\Http\Controllers\StudentRegistrationController;
 use App\Http\Controllers\AuthController;
-// use App\Http\Controllers\Auth\LoginController;
 
+
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+
+Route::get('/', function () {
+    return view('auth.login');
+});
 
 
 // // Login routes
@@ -30,29 +42,12 @@ Route::post('/register', [AuthController::class, 'register'])->name('register');
 
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-Route::get('/', function () {
-    return view('auth.login');
-});
-
-
-
 //ADMIN PORTAL
 Route::get('/admin', function () {
     return view('admin-portal.portal');
 });
 
-Route::get('/dashboard', function () {
+Route::get('/dash', function () {
     return view('admin-portal.dashboard');
 });
 
@@ -60,8 +55,12 @@ Route::get('/student-register', function () {
     return view('admin-portal.student-registration');
 });
 
-Route::get('/accounts', function () {
-    return view('admin-portal.accounts');
+Route::get('/accounts-staff', function () {
+    return view('admin-portal.accounts-staff');
+});
+
+Route::get('/accounts-student', function () {
+    return view('admin-portal.accounts-student');
 });
 
 Route::get('/student-officer', function () {
@@ -102,7 +101,7 @@ Route::get('/student-user-profile', function () {
     return view('student-portal.student-user-profile');
 });
 
-Route::get('/student-view-doc', function () {
+Route::get('/student-view-document', function () {
     return view('student-portal.student-view-document');
 });
 
@@ -115,45 +114,3 @@ Route::get('/student-view-doc', function () {
 //         return 'Database connection failed: ' . $e->getMessage();
 //     }
 // });
-
-// // Login routes
-// Route::get('/login', 'AuthController@showLoginForm')->name('login');
-// Route::post('/login', 'AuthController@login')->name('login.submit');
-// Route::post('/logout', 'AuthController@logout')->name('logout');
-
-// // Register routes
-// Route::get('/register', 'AuthController@showRegistrationForm')->name('register');
-// Route::post('/register', 'AuthController@register')->name('register.submit');
-
-
-//STUDENT ENDPOINT
-Route::get('/admin-dash', function () {
-    return view('admin-portal.admin-dash');
-});
-
-Route::get('admin-dash', [StudentController::class, 'index']);
-Route::get('clearance', [ClearanceController::class, 'index'])->name('clearance');
-Route::get('student-registration', [StudentRegistrationController::class, 'index'])->name('student-registration');
-
-// //Login Register Routing
-// Route::controller(LoginRegisterController::class)->group(function() {
-//     Route::get('/register', 'register')->name('register');
-//     Route::post('/store', 'store')->name('store');
-//     Route::get('/login', 'login')->name('login');
-//     Route::post('/authenticate', 'authenticate')->name('authenticate');
-//     Route::get('/dashboard', 'dashboard')->name('dashboard');
-//     Route::post('/logout', 'logout')->name('logout');
-// });
-
-
-
-// Route definition
-// Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
-
-
-// Route::get('/login', '\Auth\LoginController@showLoginForm')->name('login');
-// Route::post('/login', '\Auth\LoginController@login')->name('login.submit');
-Route::post('/logout', '\Auth\LoginController@logout')->name('logout');
-
-// Route::get('/register', '\Auth\RegisterController@showRegistrationForm')->name('register');
-// Route::post('/register', '\Auth\RegisterController@register');
