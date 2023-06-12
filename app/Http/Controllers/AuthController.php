@@ -60,13 +60,14 @@ class AuthController extends Controller
             'middle_initial' => 'required',
             'last_name' => 'required',
             'student_ID' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required',
             'password' => 'required|min:8',
             'college' => 'required',
             'year_level' => 'required',
             'course' => 'required',
             'section' => 'required',
         ]);
+
 
         // Create a new user record
         $user = new User;
@@ -88,5 +89,6 @@ class AuthController extends Controller
         User::create($validatedData);
 
         return redirect()->intended('/login'); // Redirect to the desired page after registration
+
     }
 }

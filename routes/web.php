@@ -22,22 +22,12 @@ Route::get('/', function () {
 });
 
 
-// // Login routes
-// Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
-// Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
-// Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-
-// // Registration routes
-// Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
-// Route::post('/register', [AuthController::class, 'register'])->name('register.submit');
-
-
 // Login route
-Route::get('/login', 'AuthController@showLoginForm')->name('login');
-Route::post('/login', 'AuthController@login');
+Route::get('/login',  [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login',  [AuthController::class, 'login']);
 
 // Registration route
-Route::post('/register', 'AuthController@register');
+Route::get('/register', [AuthController::class, 'showRegistrationForm']);
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 
 

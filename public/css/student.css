@@ -238,10 +238,15 @@ input {
 
 .file-preview {
     background: lightgray;
-    height: 70vh;
-    width: 100%;
+    padding: 10px;
 }
 
 .upsd-file-input {
     margin-left: 10px;
+}
+
+.file-preview img {
+    height: 60vh;
+    width: 100%;
+    margin-top: 10px;
 }

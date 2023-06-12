@@ -12,6 +12,7 @@
 
     <div class="container mt-5">
         <div class="row">
+            i am register (groot)
             {{--  Left section --}}
             <div class="col-md-6 mx-auto text-center" style="z-index: 100000">
                 <img src="{{ asset('images/LNU logo.PNG') }}" alt="Logo" style="margin-top: 80px;">
@@ -30,7 +31,6 @@
                         <h3 class="card-title">Log in</h3>
                         <form class="d-flex flex-column gap-3" method="POST" action="{{ route('login') }}">
                             @csrf
-
                             <div class="form-group">
                                 <label for="student_id" class="text-nowrap"
                                     style="font-size: 15px">{{ __('Student ID') }}</label>

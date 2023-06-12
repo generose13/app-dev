@@ -34,10 +34,39 @@
                 <button class="btnPrint"><i class="fa fa-print"></i> Print</button>
             </div>
         </div>
+
+
         <div class="file-content">
-            <div class="file-preview"></div>
+            <div class="file-preview">
+                <input type="file" accept="image/*">
+            </div>
         </div>
     </div>
+
+    <script>
+        function previewFile() {
+            var preview = document.querySelector('.file-preview');
+            var fileInput = document.querySelector('input[type=file]');
+            var file = fileInput.files[0];
+
+
+            reader.onloadend = function() {
+                var img = document.createElement('img');
+                img.src = reader.result;
+                preview.innerHTML = ''; // Clear previous preview
+                preview.appendChild(img);
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+                fileInput.value = ''; // Clear file input value
+            } else {
+                preview.innerHTML = '';
+            }
+        }
+
+        document.querySelector('input[type=file]').addEventListener('change', previewFile);
+    </script>
 
 </body>
 

@@ -18,11 +18,11 @@ class CreateUsersTable extends Migration
             $table->string('first_name');
             $table->string('middle_initial')->nullable();
             $table->string('last_name');
-            $table->string('student_ID')->unique();
-            $table->string('email')->unique();
+            $table->string('student_ID');
+            $table->string('email');
             $table->string('password');
             $table->string('college');
-            $table->integer('year_level');
+            $table->string('year_level');
             $table->string('course');
             $table->string('section');
             $table->timestamps();
